@@ -6,9 +6,10 @@ import { useInView } from "react-intersection-observer";
 
 interface UnderlineProps {
   text: string;
+  delay?: number;
 }
 
-const Underline: React.FC<UnderlineProps> = ({ text }) => {
+const Underline: React.FC<UnderlineProps> = ({ text, delay = 0 }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -19,6 +20,7 @@ const Underline: React.FC<UnderlineProps> = ({ text }) => {
       gsap.to(".underline", {
         width: "100%",
         duration: 1,
+        delay: delay,
         ease: "bounce.out",
       });
     }

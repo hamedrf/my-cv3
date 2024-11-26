@@ -24,7 +24,7 @@ const MyNavbar = () => {
         >
           <Container fluid="lg" className="flex-row flex-lg-row-reverse">
             <Navbar.Brand href="#home" className="fs-3 fw-bold ">
-              <Underline text="حامد" />{" "}
+              <Underline text="حامد" delay={3} />{" "}
               <span style={{ color: "var(--color-one)" }}>رجبی فرجاد</span>
             </Navbar.Brand>
             <Navbar.Toggle

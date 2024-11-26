@@ -97,6 +97,16 @@ html {
   transition: 0.5s;
 }
 
+/* zoom effect styles */
+.parent-zoom-effect {
+  transform-origin: 50% 50%;
+}
+.zoom-effect {
+  opacity: 0;
+  display: block;
+  transform: rotateX(-100deg) translateY(-25rem) skew(0deg, 8deg) scale(0.8);
+}
+
 /* navbar styles  */
 
 #nav-icon {
@@ -214,6 +224,7 @@ html {
 
 header {
   padding-top: 3rem;
+  margin-bottom: 100vh;
 }
 @media (max-width: 768px) {
   .svg-header-size {

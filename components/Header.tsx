@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TypeEffect from "./TypeEffect";
 import hamed_header from "../public/images/hamed-rajabifarjad.webp";
+import ZoomEffect from "./ZoomEffect";
 
 const Header = () => {
   return (
@@ -84,8 +85,10 @@ const Header = () => {
             />
           </h1>
           <h5 className="des-font">
-            اینجا می‌توانید نگاهی دقیق‌تر به پروژه‌ها و مهارت‌های من بیندازید و
-            با کارهایی که تاکنون انجام داده‌ام، بیشتر آشنا شوید.
+            <ZoomEffect>
+              اینجا می‌توانید نگاهی دقیق‌تر به پروژه‌ها و مهارت‌های من بیندازید
+              و با کارهایی که تاکنون انجام داده‌ام، بیشتر آشنا شوید.
+            </ZoomEffect>
           </h5>
         </div>
       </div>
