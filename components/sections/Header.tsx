@@ -7,7 +7,10 @@ const Header = () => {
   return (
     <header id="home" className="position-relative z-0">
       <div className=" position-absolute top-0 w-100 z-n1 svg-header-size">
-        <div className="position-relative svg-separator w-100 h-100">
+        <div
+          className="position-relative svg-separator w-100 h-100"
+          style={{ background: "#ede8f5" }}
+        >
           <svg
             className="editorial "
             xmlns="http://www.w3.org/2000/svg"

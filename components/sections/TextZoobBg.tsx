@@ -18,8 +18,7 @@ const TextZoobBg = () => {
         scrub: 0.5,
         invalidateOnRefresh: true,
       },
-      scale: window.matchMedia("(max-width: 996px)").matches ? 3.2 : 6.2,
-      duration: 1,
+      scale: window.matchMedia("(max-width: 996px)").matches ? 3.2 : 5,
     });
   }, []);
   return (

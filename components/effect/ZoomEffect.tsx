@@ -17,11 +17,20 @@ const ZoomEffect = ({
 
   useEffect(() => {
     if (inView && elementRef.current) {
-      gsap.to(elementRef.current, {
-        opacity: 1,
-        transform: "none",
-        duration: 0.8,
-      });
+      gsap.fromTo(
+        elementRef.current,
+        {
+          opacity: 0,
+          transform:
+            "translateY(150%) rotateX(-100deg) skew(0deg, 8deg) scale(0.8)",
+        },
+        {
+          opacity: 1,
+          transform: "none",
+          duration: 0.8,
+          delay: 0.1,
+        }
+      );
     }
   }, [inView]);
 
@@ -32,7 +41,8 @@ const ZoomEffect = ({
           ref(el);
           elementRef.current = el;
         }}
-        style={{ opacity: 0, transform: "scale(0.9)" }}
+        className="d-block"
+        style={{ opacity: "0" }}
       >
         {children}
       </div>
