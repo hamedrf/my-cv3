@@ -1,14 +1,13 @@
-import Header from "@/components/Header";
-import MyNavbar from "@/components/Navbar";
-import ZoomEffect from "@/components/ZoomEffect";
+import Header from "@/components/sections/Header";
+import MyNavbar from "@/components/sections/Navbar";
+import TextZoobBg from "@/components/sections/TextZoobBg";
 
 const Home = () => {
   return (
     <>
       <MyNavbar />
       <Header />
-
-      <ZoomEffect>hello my name is susy</ZoomEffect>
+      <TextZoobBg />
     </>
   );
 };

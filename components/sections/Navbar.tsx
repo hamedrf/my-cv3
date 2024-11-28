@@ -1,10 +1,10 @@
 "use client";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import MainBtn, { colorBtn } from "./MainBtn";
+import MainBtn, { colorBtn } from "../UI/MainBtn";
 import $ from "jquery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPhone, faQuestion } from "@fortawesome/free-solid-svg-icons";
-import Underline from "./Underline";
+import Underline from "../effect/Underline";
 
 const MyNavbar = () => {
   const handelToggle = () => {

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import TypeEffect from "./TypeEffect";
-import hamed_header from "../public/images/hamed-rajabifarjad.webp";
-import ZoomEffect from "./ZoomEffect";
+import TypeEffect from "../effect/TypeEffect";
+import hamed_header from "../../public/images/hamed-rajabifarjad.webp";
+import ZoomEffect from "../effect/ZoomEffect";
 
 const Header = () => {
   return (
