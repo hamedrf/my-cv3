@@ -3,7 +3,7 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import EffectText from "./EffectText";
+import ZoomEffect from "../effect/ZoomEffect";
 
 const HorizontalScrollTxt = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,31 +47,31 @@ const HorizontalScrollTxt = () => {
         style={{ marginRight: "-1px" }}
       >
         <div className="horizontal-scroll-text-childe horizontal-scroll-text-1 bg-main ">
-          <EffectText>
+          <ZoomEffect>
             <span className="text-size-lg">
               طراحی سایت باید جذاب و مطابق با به روزترین متد دنیا باشه
               <br />
               تا .... بی رقیب بمونی
             </span>
-          </EffectText>
+          </ZoomEffect>
         </div>
         <div className="horizontal-scroll-text-childe  bg-main">
-          <EffectText>
+          <ZoomEffect>
             <span className="text-size-lg">
               سئوی سایت باید اصولی، منظم و به روز باشه
               <br />
               تا .... همیشه دیده بشی
             </span>
-          </EffectText>
+          </ZoomEffect>
         </div>
         <div className="horizontal-scroll-text-childe bg-main zoom-out-bg">
-          <EffectText>
+          <ZoomEffect>
             <span className="text-size-lg">
               تیم حرفه ای بازاریابی و فروش باید از CRMو Voip استفاده کنه
               <br />
               تا .... فروش شما دائمی و پایدار بمونه
             </span>
-          </EffectText>
+          </ZoomEffect>
         </div>
       </div>
     </>
