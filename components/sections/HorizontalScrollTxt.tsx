@@ -12,13 +12,16 @@ const HorizontalScrollTxt = () => {
       document.querySelector(".horizontal-scroll-text-parent")!.scrollWidth -
       document.documentElement.clientWidth;
 
+    const speedDuration = window.matchMedia("(max-width: 996px)").matches
+      ? contorlSizeScroll / 2
+      : contorlSizeScroll;
+
     gsap.to(".horizontal-scroll-text-parent", {
       scrollTrigger: {
         trigger: ".horizontal-scroll-text-parent",
         start: "top top",
-        end: "+=" + (contorlSizeScroll - contorlSizeScroll / 3),
+        end: "+=" + speedDuration,
         pin: ".horizontal-scroll-section",
-        markers: false,
         scrub: 0.5,
         invalidateOnRefresh: true,
       },
@@ -28,9 +31,9 @@ const HorizontalScrollTxt = () => {
     gsap.to(".zoom-out-bg", {
       scrollTrigger: {
         trigger: ".zoom-out-bg",
-        start: "+=" + (contorlSizeScroll - contorlSizeScroll / 3),
+        start: "+=" + speedDuration,
         end: "+=" + contorlSizeScroll / 9,
-        markers: false,
+        markers: true,
         scrub: 0.5,
         invalidateOnRefresh: true,
       },
