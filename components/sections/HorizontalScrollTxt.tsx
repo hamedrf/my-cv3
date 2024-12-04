@@ -33,7 +33,7 @@ const HorizontalScrollTxt = () => {
         trigger: ".zoom-out-bg",
         start: "+=" + speedDuration,
         end: "+=" + contorlSizeScroll / 9,
-        markers: true,
+        markers: false,
         scrub: 0.5,
         invalidateOnRefresh: true,
       },

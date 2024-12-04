@@ -1,67 +1,65 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ProgressBar } from "react-bootstrap";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { useInView } from "react-intersection-observer";
-interface SkillProgressProps {
-  icon?: IconProp;
-  progress: number;
-  color?: string;
-  svg?: React.ReactNode;
-}
 
-const SkillProgress: React.FC<SkillProgressProps> = ({
+import gsap from "gsap";
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
+const SkillProgress = ({
   icon,
   progress,
-  color,
-  svg = null,
-}) => {
-  const [progressEffect, setProgressEffect] = useState(0);
+}: Readonly<{ icon: React.ReactNode; progress: number }>) => {
   const { ref, inView } = useInView({
-    threshold: 0.1,
     triggerOnce: true,
+    threshold: 0.5,
   });
-
+  const [progressState, setProgressState] = useState(0);
+  const elementRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
-    if (inView) {
-      let start = 0;
-      const increment = 1;
-      const interval = setInterval(() => {
-        start += increment;
-        if (start >= progress) {
-          start = progress;
-          clearInterval(interval);
+    console.log("hello");
+    if (inView && elementRef.current) {
+      gsap.to(elementRef.current, {
+        width: `${progress}%`,
+        duration: 2,
+        delay: 0.5,
+        ease: "elastic.out(1,0.5)",
+      });
+      const animation = gsap.to(
+        {},
+        {
+          duration: 2,
+          onUpdate: function () {
+            const value = Math.ceil((progress * this.progress()) as number);
+            setProgressState(value);
+          },
         }
-        setProgressEffect(Math.floor(start));
-      }, 15);
+      );
+      return () => {
+        animation.kill();
+      };
     }
-  }, [inView, progress]);
+  }, [inView, elementRef.current]);
   return (
-    <div
-      className="mt-2 row skill-progress d-flex justify-content-around align-items-center ps-lg-5"
-      ref={ref}
-    >
-      <ProgressBar className="skill-progress-bar col-10 p-0 ">
+    <div className="w-100 d-flex align-items-center" ref={ref}>
+      <div className=" w-100">
         <div
-          className="text-center"
-          style={{
-            width: `${progressEffect}%`,
-          }}
+          className=" w-100 rounded-5 bg-secondary overflow-hidden "
+          style={{ height: "15px" }}
         >
-          {" "}
-          {progressEffect}%
+          <div
+            className="position-relative bg-main rounded-5 overflow-hidden"
+            ref={elementRef}
+            style={{ height: "15px", width: "0" }}
+          >
+            <div
+              className="position-absolute top-50 translate-middle "
+              style={{ left: "50%" }}
+            >
+              {progressState}%
+            </div>
+          </div>
         </div>
-      </ProgressBar>
-      {svg === null ? (
-        <FontAwesomeIcon
-          icon={icon!}
-          className="progress-bar-icon"
-          style={{ color: color }}
-        />
-      ) : (
-        svg
-      )}
+      </div>
+      <div>{icon}</div>
     </div>
   );
 };

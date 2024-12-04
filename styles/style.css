@@ -6,10 +6,13 @@ html {
 }
 
 :root {
-  --color-one: #a2d2ff;
+  /* --color-one: #a2d2ff; */
+  --color-one: #8697c4;
   --color-two: #002e5a;
   --color-there: #ffeea3;
-  --color-four: #a3ffee;
+  --color-six: #ede8f5;
+  --color-seven: #8697c4;
+  --color-eight: #3d52a0;
 }
 
 .text-size-lg {
@@ -28,13 +31,31 @@ html {
   background: var(--color-one);
 }
 .bg-second {
-  background-color: var(--color-there);
-}
-.bg-third {
-  background-color: var(--color-two);
+  background-color: var(--color-six);
 }
 .text-main {
   color: var(--color-two);
+}
+/* gradien shadow */
+.gradien-shadow {
+  position: relative;
+  display: block;
+}
+.gradien-shadow::after {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  left: -4%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-six);
+  background: linear-gradient(
+    40deg,
+    var(--color-seven) 0%,
+    var(--color-eight) 100%
+  );
+  border-radius: 2rem;
+  z-index: -1;
 }
 /* btn styles */
 
@@ -437,51 +458,3 @@ header {
 }
 
 /* about  */
-.about-img {
-  position: relative;
-}
-.important-width-about-img {
-  width: 65% !important;
-}
-.about-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--color-two);
-  background: linear-gradient(
-    0deg,
-    var(--color-two) 0%,
-    var(--color-there) 100%
-  );
-  transform: translate(-3%, 3%);
-  border-radius: 5rem;
-  z-index: -1;
-}
-.skill-progress {
-  width: 100%;
-}
-
-.progress-bar-icon {
-  flex: 0 0 auto;
-  width: 5%;
-  height: 100%;
-  padding: 0px;
-}
-.skill-progress-bar div {
-  background: var(--color-two);
-  background: linear-gradient(
-    90deg,
-    var(--color-two) 20%,
-    var(--color-there) 80%
-  );
-  color: #ffffff;
-  border-radius: 999px;
-}
-.about-content {
-  background-color: var(--color-five);
-  border-radius: 30px;
-  padding: 3rem 2rem;
-}
