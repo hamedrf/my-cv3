@@ -46,12 +46,20 @@ html {
 .bg-second {
   background-color: var(--color-second);
 }
+.bg-gradients {
+  background: var(--color-third);
+  background: linear-gradient(
+    40deg,
+    var(--color-gradient-second) 0%,
+    var(--color-gradient-main-dark) 100%
+  );
+}
 .text-main {
   color: var(--color-txt-dark);
 }
 /* icon skill progress */
 .icon-skill-progress {
-  width: 50%;
+  width: 45%;
   height: auto;
   max-height: 3rem;
 }
@@ -62,13 +70,13 @@ html {
   color: #61dafb;
 }
 .js-color {
-  color: #f7df1e;
+  color: #f6d901;
 }
 .jquery-color {
   fill: #0769ad;
 }
 .gsap-color {
-  color: #88ce02;
+  color: #88ce02 !important;
 }
 .wordpress-color {
   color: #21759b;
@@ -99,30 +107,6 @@ html {
     var(--color-gradient-second) 100%
   );
   border-radius: 2rem;
-  z-index: -1;
-}
-/* background gradient*/
-.bg-gradient {
-  background-color: #fff;
-  border-radius: 2rem;
-  position: relative;
-  display: block;
-}
-.bg-gradient::after {
-  content: "";
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background: var(--color-third);
-  background: linear-gradient(
-    40deg,
-    var(--color-gradient-second-dark) 0%,
-    var(--color-gradient-main-dark) 100%
-  );
-  border-radius: 2rem;
-  transform: scale(1.03, 1.2);
   z-index: -1;
 }
 /* btn styles */

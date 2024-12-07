@@ -39,17 +39,20 @@ const SkillProgress = ({
     }
   }, [inView, elementRef.current]);
   return (
-    <div className="w-100 d-flex align-items-center py-2 bg-gradient" ref={ref}>
+    <div
+      className="w-100 d-flex align-items-center my-3 p-3 bg-second rounded-5 "
+      ref={ref}
+    >
       <div className=" w-75">
         <div
           dir="ltr"
-          className=" w-100 rounded-5 bg-secondary overflow-hidden "
-          style={{ height: "20px" }}
+          className=" w-100 rounded-5 bg-secondary  bg-opacity-25 overflow-hidden "
+          style={{ height: "25px" }}
         >
           <div
-            className="position-relative bg-main rounded-5 overflow-hidden"
+            className="position-relative bg-gradients rounded-5 overflow-hidden"
             ref={elementRef}
-            style={{ height: "20px", width: "0" }}
+            style={{ height: "25px", width: "0" }}
           >
             <div
               className="position-absolute top-50 translate-middle "
