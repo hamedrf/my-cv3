@@ -31,7 +31,7 @@ const Header = () => {
                 xlinkHref="#gentle-wave"
                 x="70"
                 y="3"
-                fill="var(--color-gradient---color-second)"
+                fill="var(--color-gradient-second)"
               />
             </g>
             <g className="parallax2">
@@ -78,7 +78,7 @@ const Header = () => {
               <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
                 <stop
                   offset="0%"
-                  stopColor="var(--color-gradient---color-second-dark)"
+                  stopColor="var(--color-gradient-second-dark)"
                 />
                 <stop
                   offset="100%"

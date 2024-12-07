@@ -12,7 +12,7 @@ const HorizontalScrollTxt = () => {
       document.querySelector(".horizontal-scroll-text-parent")!.scrollWidth -
       document.documentElement.clientWidth;
 
-    const speedDuration = window.matchMedia("(max-width: 996px)").matches
+    const speedDuration = window.matchMedia("(min-width: 996px)").matches
       ? contorlSizeScroll / 2
       : contorlSizeScroll;
 
@@ -32,7 +32,7 @@ const HorizontalScrollTxt = () => {
       scrollTrigger: {
         trigger: ".zoom-out-bg",
         start: "+=" + speedDuration,
-        end: "+=" + contorlSizeScroll / 9,
+        end: "+=" + contorlSizeScroll / 10,
         markers: false,
         scrub: 0.5,
         invalidateOnRefresh: true,
