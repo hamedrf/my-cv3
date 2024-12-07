@@ -6,13 +6,26 @@ html {
 }
 
 :root {
-  /* --color-one: #a2d2ff; */
-  --color-one: #8697c4;
-  --color-two: #002e5a;
-  --color-there: #ffeea3;
+  /* --color-one: #a2d2ff; 
+   --color-one: #8697c4; 
+   --color-one: #3d52a0; 
+   --color-two:  #002e5a; 
+   --color-two: #ede8f5;
+  --color-third: #ffeea3;
   --color-six: #ede8f5;
   --color-seven: #8697c4;
-  --color-eight: #3d52a0;
+  --color-eight: #3d52a0; */
+
+  --color-main: #a2d2ff;
+  --color---color-second: #ede8f5;
+  --color-third: #9ad5ca;
+  --color-four: #ffeea3;
+  --color-gradient-main: #adb9e3;
+  --color-gradient---color-second: #acdde7;
+  --color-gradient-main-dark: #8697c4;
+  --color-gradient---color-second-dark: #3d52a0;
+  --color-txt-dark: #002e5a;
+  --color-txt: #fff;
 }
 
 .text-size-lg {
@@ -28,14 +41,24 @@ html {
   color: #373737 !important;
 }
 .bg-main {
-  background: var(--color-one);
+  background: var(--color-main);
 }
 .bg-second {
-  background-color: var(--color-six);
+  background-color: var(--color---color-second);
 }
 .text-main {
-  color: var(--color-two);
+  color: var(--color-txt-dark);
 }
+/* icon skill progress */
+.icon-skill-progress {
+  width: 50%;
+  height: auto;
+  max-height: 4rem;
+}
+
+.bootstrap-color {
+}
+
 /* gradien shadow */
 .gradien-shadow {
   position: relative;
@@ -48,11 +71,11 @@ html {
   left: -4%;
   width: 100%;
   height: 100%;
-  background: var(--color-six);
+  background: var(--color-third);
   background: linear-gradient(
     40deg,
-    var(--color-seven) 0%,
-    var(--color-eight) 100%
+    var(--color-gradient-main) 0%,
+    var(--color-gradient---color-second) 100%
   );
   border-radius: 2rem;
   z-index: -1;
@@ -60,29 +83,29 @@ html {
 /* btn styles */
 
 .btn-main {
-  background-color: var(--color-one) !important;
-  color: var(--color-two) !important;
+  background-color: var(--color-main) !important;
+  color: var(--color-txt-dark) !important;
   overflow: hidden;
   border: none;
 }
 .btn-second:hover {
-  background-color: var(--color-there) !important;
+  background-color: var(--color---color-second) !important;
 }
 .btn-second:active {
-  background-color: var(--color-there) !important;
-  color: var(--color-two) !important;
+  background-color: var(--color---color-second) !important;
+  color: var(--color-txt-dark) !important;
 }
 .btn-second {
-  background-color: var(--color-there) !important;
+  background-color: var(--color---color-second) !important;
   overflow: hidden;
   border: none;
 }
 .btn-main:hover {
-  background-color: var(--color-one);
-  color: var(--color-two);
+  background-color: var(--color-main);
+  color: var(--color-txt-dark);
 }
 .btn-main:active {
-  background-color: var(--color-one) !important;
+  background-color: var(--color-main) !important;
 }
 .btn {
   outline: 0.1px solid rgba(0, 0, 0, 0.278);
@@ -152,7 +175,7 @@ html {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: var(--color-one);
+  background: var(--color-main);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -202,7 +225,7 @@ html {
 /* hover nav items  */
 
 .nav-link:hover {
-  color: var(--color-one) !important;
+  color: var(--color-main) !important;
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -215,7 +238,7 @@ html {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: var(--color-one);
+  background-color: var(--color-main);
   position: absolute;
   bottom: 0px;
   right: 0;
@@ -227,7 +250,7 @@ html {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: var(--color-one);
+  background-color: var(--color-main);
   position: absolute;
   top: 0px;
   right: 0;
@@ -266,7 +289,7 @@ header {
   transform: rotate(13deg) scale(2.2, 2.7);
   height: 40vh;
   width: 100%;
-  background-color: var(--color-five);
+  background-color: var(--color---color-second);
   transition: 2s;
   animation-fill-mode: forwards;
   animation: header-svg-animation 2s normal;
@@ -420,7 +443,7 @@ header {
   position: absolute;
   top: 50%;
   right: 8.5rem;
-  background-color: var(--color-two);
+  background-color: var(--color-txt-dark);
   animation: custom-border-head 1.5s 3.8s forwards;
   display: none;
 }
@@ -451,7 +474,7 @@ header {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  color: var(--color-two);
+  color: var(--color-txt-dark);
   font-weight: bold;
   text-align: center;
   margin: 0px -1px;

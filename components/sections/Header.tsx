@@ -7,10 +7,7 @@ const Header = () => {
   return (
     <header id="home" className="position-relative z-0">
       <div className=" position-absolute top-0 w-100 z-n1 svg-header-size">
-        <div
-          className="position-relative svg-separator w-100 h-100"
-          style={{ background: "#ede8f5" }}
-        >
+        <div className="position-relative svg-separator w-100 h-100">
           <svg
             className="editorial "
             xmlns="http://www.w3.org/2000/svg"
@@ -30,13 +27,28 @@ const Header = () => {
               />
             </defs>
             <g className="parallax1">
-              <use xlinkHref="#gentle-wave" x="70" y="3" fill="#ede8f5" />
+              <use
+                xlinkHref="#gentle-wave"
+                x="70"
+                y="3"
+                fill="var(--color-gradient---color-second)"
+              />
             </g>
             <g className="parallax2">
-              <use xlinkHref="#gentle-wave" x="70" y="0" fill="#8697c4" />
+              <use
+                xlinkHref="#gentle-wave"
+                x="70"
+                y="0"
+                fill="var(--color-gradient-main)"
+              />
             </g>
             <g className="parallax3">
-              <use xlinkHref="#gentle-wave" x="70" y="9" fill="#3d52a0" />
+              <use
+                xlinkHref="#gentle-wave"
+                x="70"
+                y="9"
+                fill="var(--color-main)"
+              />
             </g>
             <g className="parallax4">
               <use xlinkHref="#gentle-wave" x="70" y="6" fill="#fff" />
@@ -64,8 +76,14 @@ const Header = () => {
           >
             <defs>
               <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
-                <stop offset="0%" stopColor="#7091e6" />
-                <stop offset="100%" stopColor="#3d52a0" />
+                <stop
+                  offset="0%"
+                  stopColor="var(--color-gradient---color-second-dark)"
+                />
+                <stop
+                  offset="100%"
+                  stopColor="var(--color-gradient-main-dark)"
+                />
               </linearGradient>
             </defs>
             <g

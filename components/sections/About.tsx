@@ -2,6 +2,8 @@ import Image from "next/image";
 import Underline from "../effect/Underline";
 import hamedrajabifarjad from "../../public/images/hamedrajabifarjad.webp";
 import SkillProgress from "../UI/SkillProgress";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBootstrap, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   return (
@@ -25,9 +27,24 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="col-xl-7 px-5 col-lg-6 col-12 d-flex justify-content-center align-items-center">
-        <div className="w-50">
-          <SkillProgress icon={<div>1</div>} progress={90} />
+      <div className="col-xl-7 p-5 col-lg-6 col-12 d-flex justify-content-center align-items-center">
+        <div className="w-50 ps-5">
+          <SkillProgress
+            icon={
+              <>
+                <FontAwesomeIcon
+                  icon={faReact}
+                  className="icon-skill-progress"
+                />
+                <FontAwesomeIcon
+                  icon={faBootstrap}
+                  className="icon-skill-progress"
+                />
+                <FontAwesomeIcon icon={faJs} className="icon-skill-progress" />
+              </>
+            }
+            progress={90}
+          />
         </div>
         <div className="w-50 h-auto gradien-shadow">
           <Image

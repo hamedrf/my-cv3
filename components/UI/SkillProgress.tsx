@@ -39,8 +39,8 @@ const SkillProgress = ({
     }
   }, [inView, elementRef.current]);
   return (
-    <div className="w-100 d-flex align-items-center" ref={ref}>
-      <div className=" w-100">
+    <div className="w-100 d-flex align-items-center py-2" ref={ref}>
+      <div className=" w-75">
         <div
           className=" w-100 rounded-5 bg-secondary overflow-hidden "
           style={{ height: "15px" }}
@@ -59,7 +59,9 @@ const SkillProgress = ({
           </div>
         </div>
       </div>
-      <div>{icon}</div>
+      <div className="w-25 d-flex justify-content-center flex-wrap align-items-center">
+        {icon}
+      </div>
     </div>
   );
 };
