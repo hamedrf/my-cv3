@@ -510,3 +510,26 @@ header {
 }
 
 /* about  */
+
+/* serves section */
+.serves-section .serves-img-1 {
+  top: 50%;
+  left: 25%;
+}
+.serves-parent-img div {
+  transform: translateY(-70%);
+}
+.serves-parent-img div img {
+  transform: scale(2) !important;
+}
+@media only screen and (max-width: 992px) {
+  .serves-parent-img {
+    height: 50vh !important;
+  }
+  .serves-parent-text div {
+    height: 50vh !important;
+  }
+}
+.pin-spacer {
+  overflow: hidden !important;
+}
