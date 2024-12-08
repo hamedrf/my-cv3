@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <section className="row d-flex justify-content-around align-items-center px-xl-3">
+    <section className="row d-flex justify-content-around align-items-center px-xl-3 my-5">
       <div className="col-xl-4 col-md-8 col-11 p-xl-0 py-5 d-flex justify-content-center">
         <div className="bg-second rounded-5 p-1 p-xxl-5 p-xl-4 p-lg-3 d-flex justify-content-center flex-column align-items-center">
           <h1 className="m-5">
@@ -34,7 +34,7 @@ const About = () => {
         </div>
       </div>
       <div className="col-xl-8 col-12   row d-flex justify-content-center flex-md-row flex-column-reverse">
-        <div className="col-md-6 col-12 px-3 my-5 d-flex flex-column justify-content-evenly align-items-center">
+        <div className="col-md-6 col-12 px-3 my-5 my-md-0 d-flex flex-column justify-content-evenly align-items-center">
           <SkillProgress
             icon={
               <>

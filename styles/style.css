@@ -516,6 +516,9 @@ header {
   top: 50%;
   left: 25%;
 }
+.serves-parent-img {
+  height: 100vh;
+}
 .serves-parent-img div {
   transform: translateY(-70%);
 }

@@ -101,7 +101,7 @@ const Serves = () => {
   }, []);
   return (
     <div className="d-flex  serves-section flex-column flex-lg-row overflow-hidden">
-      <div className="serves-parent-img bg-light col-12 col-lg-6 overflow-hidden vh-100  position-relative ">
+      <div className="serves-parent-img bg-light col-12 col-lg-6 overflow-hidden  position-relative ">
         <div className="serves-img-1  position-absolute w-50 top-50 text-center">
           <Image
             src={webDesign}
