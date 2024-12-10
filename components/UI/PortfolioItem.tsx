@@ -12,15 +12,15 @@ const PortfolioItem: React.FC<SlicePortfolioProps> = ({ item }) => {
       id="portfolio"
       key={item.id}
       className={`${item.action} 
-            d-flex justify-content-start align-items-center justify-content-lg-center flex-lg-row-reverse  flex-column row   vh-100 w-100
+            d-flex justify-content-start align-items-lg-stretch align-items-center justify-content-lg-center flex-lg-row-reverse  flex-column row  w-100
       `}
     >
       <div
-        className={`bg-background-portfoliio bg-${item.imgClass} col-12 col-lg-6`}
+        className={`bg-background-portfoliio bg-${item.imgClass} col-11 col-xl-6`}
       ></div>
       <div
         style={{ background: item.color }}
-        className="col-11 col-lg-5 col-xl-4  col-xxl-3 d-flex justify-content-center  align-items-center content-portfolio-effect flex-column content-portfolio"
+        className="col-11 col-xl-4  col-xxl-3 d-flex justify-content-center  align-items-center content-portfolio-effect flex-column content-portfolio"
       >
         <h1 className="header-font my-3 ">{item?.title}</h1>
         <p className="m-lg-5 my-4 mx-2 des-font">{item?.des}</p>
