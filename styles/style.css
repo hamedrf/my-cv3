@@ -536,3 +536,242 @@ header {
 .pin-spacer {
   overflow: hidden !important;
 }
+
+/* portfolio */
+.bg-background-portfoliio {
+  transition: background-position 5s;
+  border-radius: 40px;
+  background-size: cover !important;
+  height: 70%;
+  z-index: 1;
+}
+.bg-hamedrajabifarjad {
+  background: url(../public/images/hamedrajabifarjad.ir.webp) no-repeat center
+    top;
+  border: 0.8rem solid #9badff;
+}
+.bg-zahrarajabifarjad {
+  background: url(../public/images/zahrarajabifarjad.ir.webp) no-repeat center
+    top;
+  border: 0.8rem solid #75aeff;
+}
+.bg-arameshebadan {
+  background: url(../public/images/arameshbadan.ir.webp) no-repeat center top;
+  border: 0.8rem solid #49c3cc;
+}
+.bg-background-portfoliio:hover {
+  background-position: center bottom;
+}
+
+.tag-Portfolio {
+  background-color: var(--color-second);
+  margin: 0.2rem 0.3rem;
+  padding: 0.4rem 0.6rem;
+}
+.content-portfolio {
+  border-radius: 0px 40px 40px 0px;
+  height: 70%;
+  transform: translatex(-100%);
+  z-index: 0;
+  animation: content-portfolio-effect 0.5s 1s forwards;
+}
+
+@keyframes content-portfolio-effect-mobile {
+  0% {
+    transform: translatey(-100%) !important;
+  }
+  100% {
+    transform: translatey(-8%) !important;
+  }
+}
+@keyframes content-portfolio-effect {
+  0% {
+    transform: translatex(-100%);
+  }
+  100% {
+    transform: translatex(-5%);
+  }
+}
+
+.effect-after-next {
+  transform: scale(1, 1);
+  opacity: 1;
+  z-index: 2;
+  animation: effect-after-next 1.5s forwards;
+}
+@keyframes effect-after-next {
+  0% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+    z-index: 2;
+  }
+  100% {
+    transform: scale(1, 1) !important;
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.effect-befor-next {
+  transform: scale(0, 0);
+  opacity: 0;
+  animation: effect-befor-next 1.5s forwards;
+  position: absolute;
+  top: 0;
+}
+@keyframes effect-befor-next {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+}
+.effect-after-Previous {
+  opacity: 0;
+  z-index: -1;
+  animation: effect-after-Previous 1.5s forwards;
+}
+@keyframes effect-after-Previous {
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+.effect-befor-Previous {
+  opacity: 1;
+  z-index: 1;
+  animation: effect-befor-Previous 1.5s forwards;
+  position: absolute;
+  top: 0;
+}
+@keyframes effect-befor-Previous {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .bg-background-portfoliio {
+    height: 40vh !important;
+    width: 95%;
+  }
+  .content-portfolio {
+    border-radius: 0px 0px 40px 40px !important;
+    height: auto !important;
+    width: 95%;
+    transform: translateY(-10%) !important;
+    padding: 4rem 0px 0px 1rem;
+    animation: none !important;
+  }
+  #portfolio {
+    height: auto !important;
+    padding-bottom: 8rem;
+  }
+  .arrow {
+    top: 90% !important;
+  }
+}
+.arrow-left {
+  transform: rotate(180deg) translatey(50%);
+}
+.arrow-right {
+  transform: translatey(-50%);
+}
+.arrow {
+  position: relative;
+  border: 3px solid var(--color-main);
+  width: 6rem;
+  height: 6rem;
+  top: 50%;
+  border-radius: 100%;
+}
+.arrow::after {
+  content: "";
+  width: 0;
+  transition: 0.5s;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: var(--color-third);
+  border-radius: 100%;
+}
+.arrow:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.arrow span {
+  z-index: 999;
+  height: 3px;
+  margin: 1px;
+  width: 30px;
+  border-radius: 99px;
+  background: var(--color-main);
+  transition: 0.4s ease;
+}
+
+.arrow span:first-child {
+  display: block;
+  position: absolute;
+  transform: rotate(-40deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+.arrow span:nth-child(2) {
+  display: block;
+  position: absolute;
+  transform: rotate(-40deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+.arrow span:nth-child(3) {
+  display: block;
+  position: absolute;
+  transform: rotate(40deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+.arrow span:nth-child(4) {
+  display: block;
+  position: absolute;
+  transform: rotate(40deg);
+  left: 45%;
+  bottom: 54%;
+}
+.arrow:hover span {
+  background-color: #fff;
+}
+.arrow:hover span:nth-child(1) {
+  transform: rotate(140deg);
+}
+
+.arrow:hover span:nth-child(2) {
+  transform: rotate(140deg);
+}
+
+.arrow:hover span:nth-child(3) {
+  transform: rotate(220deg);
+}
+
+.arrow:hover span:nth-child(4) {
+  transform: rotate(220deg);
+}

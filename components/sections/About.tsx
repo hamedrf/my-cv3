@@ -14,8 +14,8 @@ import {
 const About = () => {
   return (
     <section className="row d-flex justify-content-around align-items-center px-xl-3 my-5">
-      <div className="col-xl-4 col-md-8 col-11 p-xl-0 py-5 d-flex justify-content-center">
-        <div className="bg-second rounded-5 p-1 p-xxl-5 p-xl-4 p-lg-3 d-flex justify-content-center flex-column align-items-center">
+      <div className=" col-xl-4 col-md-7 col-11 p-xl-0 py-5 d-flex justify-content-center">
+        <div className="bg-second rounded-5 p-xxl-5 p-xl-4 p-3 d-flex justify-content-center flex-column align-items-center">
           <h1 className="m-5">
             {" "}
             <Underline text="درباره من" delay={1} />

@@ -10,10 +10,12 @@ const MainBtn = ({
   text,
   color,
   rounded = true,
+  eventClick,
 }: {
   text: string;
   color: colorBtn;
   rounded?: boolean;
+  eventClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) => {
   const btnRef = useRef(null);
 
@@ -41,6 +43,7 @@ const MainBtn = ({
       className={`btn btn-lg btn-${color} ${
         rounded && "rounded-5"
       } position-relative`}
+      onClick={eventClick || undefined}
     >
       <span
         className="position-absolute  top-50 translate-middle w-100 h-100 d-flex justify-content-center align-items-center z-1 "
