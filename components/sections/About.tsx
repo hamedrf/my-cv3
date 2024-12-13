@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <section className="row d-flex justify-content-around align-items-center px-xl-3 my-5">
+    <section className="row d-flex justify-content-around align-items-center px-xl-3 about">
       <div className=" col-xl-4 col-md-7 col-11 p-xl-0 py-5 d-flex justify-content-center">
         <div className="bg-second rounded-5 p-xxl-5 p-xl-4 p-3 d-flex justify-content-center flex-column align-items-center">
           <h1 className="m-5">

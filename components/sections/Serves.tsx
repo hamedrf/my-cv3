@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import ZoomEffect from "../effect/ZoomEffect";
-import webDesign from "../../public/gifs/Web-design.gif";
-import seo from "../../public/gifs/seo.gif";
-import marketing from "../../public/gifs/marketing.gif";
+import Design from "../../public/gifs/Web-design.gif";
+import Speed from "../../public/gifs/web-speed.gif";
+import Power from "../../public/gifs/web-power.gif";
 
 const Serves = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -104,8 +104,8 @@ const Serves = () => {
       <div className="serves-parent-img bg-light col-12 col-lg-6 overflow-hidden  position-relative ">
         <div className="serves-img-1  position-absolute w-50 top-50 text-center">
           <Image
-            src={webDesign}
-            alt="web-design"
+            src={Design}
+            alt="design"
             width={1}
             height={1}
             className="w-100 h-100"
@@ -115,8 +115,8 @@ const Serves = () => {
         <div className="serves-img-2  position-absolute w-50 top-50 text-center">
           {" "}
           <Image
-            src={seo}
-            alt="seo"
+            src={Speed}
+            alt="speed"
             width={1}
             height={1}
             className="w-100 h-100"
@@ -125,8 +125,8 @@ const Serves = () => {
         </div>
         <div className="serves-img-3 position-absolute w-50  top-50 text-center">
           <Image
-            src={marketing}
-            alt="marketing"
+            src={Power}
+            alt="power"
             width={1}
             height={1}
             className="w-100 h-100"
@@ -138,10 +138,13 @@ const Serves = () => {
         <div className="w-75 vh-100 flex-column justify-content-center align-items-center d-flex">
           <ZoomEffect>
             <div className="flex-column justify-content-center align-items-center d-flex">
-              <h1>خدمات سئو</h1>
-              <p>
-                مخاطب خود را میخکوب کنید طراحی سایت منحصر به فرد ، با به روزترین
-                متد دنیا
+              <h1 className="fw-bold my-4">طراحی مدرن، کاربردی و جذاب</h1>
+              <p className="text-size-sm ">
+                با استفاده از ابزارهایی مثل GSAP، jQuery، و React، می‌توانید
+                طراحی‌های مدرن و جذابی ساخت که نه تنها زیبا هستند، بلکه تجربه
+                کاربری بی‌نظیری نیز فراهم می‌کنند. این تکنولوژی‌ها به شما کمک
+                می‌کنند تا انیمیشن‌های جذاب و تعاملات پویا ایجاد کنید که باعث
+                جذب کاربران می‌شود.
               </p>
             </div>
           </ZoomEffect>
@@ -150,10 +153,15 @@ const Serves = () => {
           {" "}
           <ZoomEffect>
             <div className="flex-column justify-content-center align-items-center d-flex">
-              <h1>خدمات سئو</h1>
-              <p>
-                در همین بازار ، سریع و پرقدرت بفروش تحول در فروش ، نتیجه سئوی
-                حرفه ای
+              <h1 className="fw-bold my-4">سرعت بالا، جذب کاربر</h1>
+              <p className="text-size-sm">
+                سرعت سایت یکی از عوامل کلیدی جذب کاربران است. با استفاده از
+                Next.js می‌توانید سایتی سریع و بهینه ایجاد کنید که بارگذاری آن
+                در کمترین زمان انجام می‌شود. این سرعت بالا تجربه کاربری روان و
+                خوشایندی را فراهم می‌کند و باعث می‌شود کاربران سایت شما را ترک
+                نکرده و به تعامل بیشتری با آن ادامه دهند. در نتیجه، سرعت بالا نه
+                تنها به بهبود تجربه کاربری کمک می‌کند، بلکه به جذب کاربر نیز کمک
+                می‌کند.
               </p>
             </div>
           </ZoomEffect>
@@ -162,10 +170,13 @@ const Serves = () => {
           {" "}
           <ZoomEffect>
             <div className="flex-column justify-content-center align-items-center d-flex">
-              <h1>خدمات سئو</h1>
-              <p>
-                بار سنگین بازاریابی و فروش را از دوش خود بردارید اختصاص تیم حرفه
-                ای و مدرن بازاریابی ویژه کسب و کار شما
+              <h1 className="fw-bold my-4">قدرت سایت و هندل کردن ترافیک ها </h1>
+              <p className="text-size-sm">
+                با استفاده از Next.js و TypeScript، سایت شما قادر به هندل کردن
+                ترافیک و درخواست‌های زیاد خواهد بود. این ابزارها به شما امکان
+                می‌دهند که سایت سریع، بهینه و مقیاس‌پذیر ایجاد کنید که همیشه
+                عملکرد عالی داشته باشد و نیازهای کاربران را به بهترین شکل ممکن
+                برآورده کند.
               </p>
             </div>
           </ZoomEffect>

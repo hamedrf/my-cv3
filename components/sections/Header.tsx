@@ -99,16 +99,13 @@ const Header = () => {
           className="col-11 col-md-10 col-lg-6 my-5 "
           style={{ maxWidth: "800px" }}
         >
-          <h1 className="custom-border-head position-relative header-font">
-            <TypeEffect
-              duration={50}
-              text="سلام من حامد رجبی فرجاد هستم خوش آمدید به سایت من"
-            />
+          <h1 className="custom-border-head position-relative  text-size-md fw-bold text-center text-lg-end">
+            <TypeEffect duration={50} text="سلام من حامد رجبی فرجاد هستم" />
           </h1>
-          <h5 className="des-font">
+          <h5 className="text-size-sm text-center text-lg-end">
             <ZoomEffect>
-              اینجا می‌توانید نگاهی دقیق‌تر به پروژه‌ها و مهارت‌های من بیندازید
-              و با کارهایی که تاکنون انجام داده‌ام، بیشتر آشنا شوید.
+              خوش آمدید به سایت من جایی که ایده‌ها به واقعیت تبدیل می‌شوند با
+              استفاده از بروزترین تکنولوژی‌ها.
             </ZoomEffect>
           </h5>
         </div>

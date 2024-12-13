@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ZoomEffect from "../effect/ZoomEffect";
+import Underline, { colors } from "../effect/Underline";
 
 const HorizontalScrollTxt = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -52,27 +53,48 @@ const HorizontalScrollTxt = () => {
         <div className="horizontal-scroll-text-childe horizontal-scroll-text-1 bg-main ">
           <ZoomEffect>
             <span className="text-size-lg">
-              طراحی سایت باید جذاب و مطابق با به روزترین متد دنیا باشه
+              طراحی سایت باید{" "}
+              <Underline text="ساده و جذاب" delay={1} color={colors.second} />{" "}
+              باشه
               <br />
-              تا .... بی رقیب بمونی
+              <span className="text-size-sm">
+                تا کاربر محو زیبایی بشه و لذت ببره
+              </span>
             </span>
           </ZoomEffect>
         </div>
         <div className="horizontal-scroll-text-childe  bg-main">
           <ZoomEffect>
             <span className="text-size-lg">
-              سئوی سایت باید اصولی، منظم و به روز باشه
+              سایت باید{" "}
+              <Underline
+                text="سریع و بهینه  "
+                delay={1}
+                color={colors.second}
+              />{" "}
+              باشد
               <br />
-              تا .... همیشه دیده بشی
+              <span className="text-size-sm">
+                تا کاربر تجربه‌ای روان و لذت‌بخش داشته باشه
+              </span>
             </span>
           </ZoomEffect>
         </div>
         <div className="horizontal-scroll-text-childe bg-main zoom-out-bg">
           <ZoomEffect>
             <span className="text-size-lg">
-              تیم حرفه ای بازاریابی و فروش باید از CRMو Voip استفاده کنه
+              سایت باید{" "}
+              <Underline
+                text=" قوی و پایدار "
+                delay={1}
+                color={colors.second}
+              />{" "}
+              باشد
               <br />
-              تا .... فروش شما دائمی و پایدار بمونه
+              <span className="text-size-sm">
+                تا به‌راحتی ترافیک و محصولات شما را مدیریت کند و همیشه در دسترس
+                باشد
+              </span>
             </span>
           </ZoomEffect>
         </div>

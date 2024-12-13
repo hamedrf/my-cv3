@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import ZoomEffect from "../effect/ZoomEffect";
+import Underline, { colors } from "../effect/Underline";
 
 const TextZoobBg = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,9 +27,17 @@ const TextZoobBg = () => {
       <div className="bg-zoom-in z-n1 col-11 col-md-9 col-lg-6 col-xl-5 col-xxl-3  bg-main rounded-circle top-50 position-absolute "></div>
       <h4 className="col-11 text-main col-md-9 col-lg-6 col-xl-5 col-xxl-3">
         <ZoomEffect>
-          <span className="text-size-md">
-            فقط سایت طراحی نمی کنیم، با استفاده از به روز ترین متد بازاریابی تا
-            رسیدن به اهدافتان در کنار شما هستیم Description …..
+          <h1 className="text-center my-4 pt-5 fw-bold text-size-md text-color">
+            <Underline text="درباره سایت" color={colors.second} delay={1.5} />
+          </h1>
+          <span className="text-size-sm pt-1">
+            سایتی که شما در حال مشاهده هستید با استفاده از تکنولوژی‌های جدید و
+            رویکردهای طراحی مدرن ساخته شده است تا تجربه‌ای بی‌نظیر از نظر ظاهر و
+            عملکرد برای کاربران ایجاد کند. هر بخش از سایت با دقت و توجه به
+            جزئیات طراحی شده تا تجربه کاربری را ارتقا دهد، جذابیت بصری را حفظ
+            کند و عملکرد بهینه‌ای داشته باشد. این سایت نه تنها از نظر طراحی مدرن
+            و زیبا است، بلکه به‌طور کامل نیازهای کاربردی کاربران را به بهترین
+            شکل پاسخ می‌دهد.
           </span>
         </ZoomEffect>
       </h4>

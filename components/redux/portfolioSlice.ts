@@ -45,6 +45,15 @@ const initialState: { portfolio: portfolio[]; active: portfolio[] } = {
       color: "#49c3cc",
       action: actionType.null,
     },
+    {
+      id: 4,
+      title: "رزومه شخصی 2",
+      des: "یک پروژه ساده، آرامش‌بخش و زیبا است که به درخواست مشتری برای علاقه‌مندان به یوگا طراحی شده است. هدف اصلی از این وب‌سایت ایجاد فضایی دلنشین برای معرفی خدمات یوگا و ایجاد ارتباط با علاقه‌مندان به این ورزش بود.",
+      tags: ["Wordpress", "WooCommerce", "Elementor"],
+      imgClass: "arameshebadan",
+      color: "#49c3cc",
+      action: actionType.null,
+    },
   ],
   active: [
     {
