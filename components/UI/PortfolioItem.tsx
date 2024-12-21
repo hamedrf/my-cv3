@@ -22,7 +22,7 @@ const PortfolioItem: React.FC<SlicePortfolioProps> = ({ item }) => {
         style={{ background: item.color }}
         className="col-11 col-xl-4  col-xxl-3 d-flex justify-content-center  align-items-center content-portfolio-effect flex-column content-portfolio"
       >
-        <h1 className="header-font my-3 ">{item?.title}</h1>
+        <h1 className="text-size-lg my-3 text-center">{item?.title}</h1>
         <p className="m-lg-5 my-4 mx-2 des-font">{item?.des}</p>
         <div className="d-flex flex-wrap justify-content-center w-75">
           {item?.tags.map((e, index) => {

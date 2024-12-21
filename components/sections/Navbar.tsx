@@ -3,7 +3,12 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import MainBtn, { colorBtn } from "../UI/MainBtn";
 import $ from "jquery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPhone, faQuestion } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faHome,
+  faPhone,
+  faQuestion,
+} from "@fortawesome/free-solid-svg-icons";
 import Underline from "../effect/Underline";
 
 const MyNavbar = () => {
@@ -41,16 +46,21 @@ const MyNavbar = () => {
               id="basic-navbar-nav "
               className="flex-row flex-lg-row-reverse"
             >
-              <Nav className="mx-4 my-lg-0 my-4 justify-content-center align-items-center">
+              <Nav className="mx-4 my-lg-0 my-4 justify-content-center align-items-center flex-column-reverse flex-lg-row">
+                <Nav.Link href="#footer">
+                  {" "}
+                  <span className="me-1">تماس</span>
+                  <FontAwesomeIcon icon={faPhone} />
+                </Nav.Link>
+                <Nav.Link href="#samples">
+                  {" "}
+                  <span className="me-1">نمونه کار</span>
+                  <FontAwesomeIcon icon={faCode} />
+                </Nav.Link>
                 <Nav.Link href="#about">
                   {" "}
                   <span className="me-1">درباره</span>
                   <FontAwesomeIcon icon={faQuestion} />
-                </Nav.Link>
-                <Nav.Link href="#contact">
-                  {" "}
-                  <span className="me-1">تماس</span>
-                  <FontAwesomeIcon icon={faPhone} />
                 </Nav.Link>
                 <Nav.Link href="#home">
                   <span className="me-1">خانه</span>
@@ -58,7 +68,9 @@ const MyNavbar = () => {
                 </Nav.Link>
               </Nav>
               <div className="d-flex justify-content-center align-items-center">
-                <MainBtn text="ارتباط با ما" color={colorBtn.main} />
+                <a href="tel:+989012226411">
+                  <MainBtn text="ارتباط با ما" color={colorBtn.main} />
+                </a>
               </div>
             </Navbar.Collapse>
           </Container>

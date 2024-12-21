@@ -19,13 +19,16 @@ const TextZoobBg = () => {
         scrub: 0.5,
         invalidateOnRefresh: true,
       },
-      scale: window.matchMedia("(max-width: 996px)").matches ? 3.2 : 5,
+      scale: window.matchMedia("(max-width: 996px)").matches ? 2.8 : 5,
     });
   }, []);
   return (
-    <section className="vw-100 vh-100 position-relative d-flex justify-content-center align-items-center">
+    <section
+      className="vw-100 position-relative d-flex justify-content-center align-items-center"
+      style={{ height: "50vh" }}
+    >
       <div className="bg-zoom-in z-n1 col-11 col-md-9 col-lg-6 col-xl-5 col-xxl-3  bg-main rounded-circle top-50 position-absolute "></div>
-      <h4 className="col-11 text-main col-md-9 col-lg-6 col-xl-5 col-xxl-3">
+      <h4 className="col-11 text-main col-md-9 col-lg-6 col-xl-5 col-xxl-4">
         <ZoomEffect>
           <h1 className="text-center my-4 pt-5 fw-bold text-size-md text-color">
             <Underline text="درباره سایت" color={colors.second} delay={1.5} />

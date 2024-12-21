@@ -2,11 +2,10 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 import ZoomEffect from "../effect/ZoomEffect";
-import Design from "../../public/gifs/Web-design.gif";
 import Speed from "../../public/gifs/web-speed.gif";
 import Power from "../../public/gifs/web-power.gif";
+import Image from "next/image";
 
 const Serves = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -103,14 +102,7 @@ const Serves = () => {
     <div className="d-flex  serves-section flex-column flex-lg-row overflow-hidden">
       <div className="serves-parent-img bg-light col-12 col-lg-6 overflow-hidden  position-relative ">
         <div className="serves-img-1  position-absolute w-50 top-50 text-center">
-          <Image
-            src={Design}
-            alt="design"
-            width={1}
-            height={1}
-            className="w-100 h-100"
-            priority
-          />
+          <img src="gifs/Web-design.gif" alt="design" className="w-100 h-100" />
         </div>
         <div className="serves-img-2  position-absolute w-50 top-50 text-center">
           {" "}

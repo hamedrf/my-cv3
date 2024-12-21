@@ -1,6 +1,4 @@
-import Image from "next/image";
 import TypeEffect from "../effect/TypeEffect";
-import hamed_header from "../../public/images/hamed-rajabifarjad.webp";
 import ZoomEffect from "../effect/ZoomEffect";
 
 const Header = () => {
@@ -58,8 +56,8 @@ const Header = () => {
       </div>
       <div className="d-flex justify-content-around align-items-center row flex-lg-row flex-column">
         <div className=" header-img-animation  col-12 col-md-10 col-lg-5 col-xl-4 col-xxl-3 position-relative  d-flex justify-content-center">
-          <Image
-            src={hamed_header}
+          <img
+            src="/images/hamed-rajabifarjad.webp"
             alt="حامد رجبی فرجاد"
             className="w-100 h-100"
           />

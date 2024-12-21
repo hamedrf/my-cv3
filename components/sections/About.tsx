@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Underline from "../effect/Underline";
-import hamedrajabifarjad from "../../public/images/hamedrajabifarjad.webp";
 import SkillProgress from "../UI/SkillProgress";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,7 +11,10 @@ import {
 
 const About = () => {
   return (
-    <section className="row d-flex justify-content-around align-items-center px-xl-3 about">
+    <section
+      className="row d-flex justify-content-around align-items-center px-xl-3 about"
+      id="about"
+    >
       <div className=" col-xl-4 col-md-7 col-11 p-xl-0 py-5 d-flex justify-content-center">
         <div className="bg-second rounded-5 p-xxl-5 p-xl-4 p-3 d-flex justify-content-center flex-column align-items-center">
           <h1 className="m-5">
@@ -21,15 +22,14 @@ const About = () => {
             <Underline text="درباره من" delay={1} />
           </h1>
           <p>
-            من برنامه‌نویس وب با بیش از ۳ سال تجربه فریلنسری در توسعه و طراحی
-            وبسایت‌های ساده و شیک هستم. تسلط کامل به HTML، CSS، JavaScript و
-            TypeScript دارم و بر فریمورک‌ها و کتابخانه‌هایی مانند React، jQuery،
-            Bootstrap و Next.js 14 نیز تسلط دارم. همچنین تجربه‌ی استفاده از
-            اکثریت هوک‌های React و Next.js از جمله react-query و redux نیز دارم.
-            توانایی کار با وردپرس و تجربه‌ی گسترده در استفاده از انواع
-            افزونه‌ها، از جمله Elementor و WooCommerce، از دیگر مهارت‌های من
-            است. همچنین با Flutter، زبان C# (Blazor)، PHP و MySQL (CRUD) آشنایی
-            دارم.
+            من برنامه‌نویس وب با بیش از ۳ سال تجربه در توسعه و طراحی وبسایت‌های
+            ساده و شیک هستم. تسلط کامل به HTML، CSS، JavaScript و TypeScript
+            دارم و بر فریمورک‌ها و کتابخانه‌هایی مانند React، jQuery، Bootstrap
+            و Next.js 14 نیز تسلط دارم. همچنین تجربه‌ی استفاده از اکثریت هوک‌های
+            React و Next.js از جمله react-query و redux نیز دارم. توانایی کار با
+            وردپرس و تجربه‌ی گسترده در استفاده از انواع افزونه‌ها، از جمله
+            Elementor و WooCommerce، از دیگر مهارت‌های من است. همچنین با
+            Flutter، زبان C# (Blazor)، PHP و MySQL (CRUD) آشنایی دارم.
           </p>
         </div>
       </div>
@@ -192,9 +192,9 @@ const About = () => {
         </div>
         <div className="col-md-6 col-12 px-5 p-md-0 ps-md-3">
           <div className="h-auto  gradien-shadow">
-            <Image
+            <img
               alt="hamedrajabifarjd"
-              src={hamedrajabifarjad}
+              src="images/hamedrajabifarjad.webp"
               className=" w-100 h-100 rounded-5 "
             />
           </div>

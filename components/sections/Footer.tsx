@@ -11,7 +11,7 @@ import MainBtn, { colorBtn } from "../UI/MainBtn";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div
         id="contact"
         className="position-relative"
@@ -100,11 +100,11 @@ const Footer = () => {
           className="d-flex justify-content-center align-items-center flex-column icon-footer"
           style={{ width: "15rem" }}
         >
-          {/* <Image
-            src={}
+          <img
+            src="images/icon.webp"
             alt="آیکون سایت"
             className="rounded rounded-circle w-100 h-100 border border-5 border-light p-3"
-          /> */}
+          />
         </div>
         <h1 className="text-center text-light display-6 my-5  ">
           <strong>حامد رجبی فرجاد</strong>
@@ -165,7 +165,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <MainBtn text="تماس" color={colorBtn.main} />
+        <a href="tel:+989012226411">
+          <MainBtn text="تماس" color={colorBtn.main} />
+        </a>
         <div className="text-center text-light mt-5 mb-3 mx-2">
           © تمامی حقوق این وبسایت متعلق به حامد رجبی فرجاد میباشد .
         </div>
