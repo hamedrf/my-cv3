@@ -24,12 +24,13 @@ const About = () => {
           <p>
             من برنامه‌نویس وب با بیش از ۳ سال تجربه در توسعه و طراحی وبسایت‌های
             ساده و شیک هستم. تسلط کامل به HTML، CSS، JavaScript و TypeScript
-            دارم و بر فریمورک‌ها و کتابخانه‌هایی مانند React، jQuery، Bootstrap
-            و Next.js 14 نیز تسلط دارم. همچنین تجربه‌ی استفاده از اکثریت هوک‌های
-            React و Next.js از جمله react-query و redux نیز دارم. توانایی کار با
-            وردپرس و تجربه‌ی گسترده در استفاده از انواع افزونه‌ها، از جمله
-            Elementor و WooCommerce، از دیگر مهارت‌های من است. همچنین با
-            Flutter، زبان C# (Blazor)، PHP و MySQL (CRUD) آشنایی دارم.
+            دارم و بر فریمورک‌ها و کتابخانه‌هایی مانند React، Tailwind ، jQuery،
+            Bootstrap و Next.js 14 نیز تسلط دارم. همچنین تجربه‌ی استفاده از
+            اکثریت هوک‌های React و Next.js از جمله react-query و redux نیز دارم.
+            توانایی کار با وردپرس و تجربه‌ی گسترده در استفاده از انواع
+            افزونه‌ها، از جمله Elementor و WooCommerce، از دیگر مهارت‌های من
+            است. همچنین با Flutter، زبان C# (Blazor)، PHP و MySQL (CRUD) آشنایی
+            دارم.
           </p>
         </div>
       </div>
@@ -133,6 +134,20 @@ const About = () => {
                   icon={faBootstrap}
                   className="icon-skill-progress bootstrap-color"
                 />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#38BDF8"
+                  viewBox="0 0 24 24"
+                  xmlSpace="preserve"
+                  className="icon-skill-progress fw-bolder h4 "
+                >
+                  <path
+                    className="w-100 h-100"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"
+                  />
+                </svg>
                 <div className="icon-skill-progress fw-bolder h4 gsap-color">
                   GSAP
                 </div>
